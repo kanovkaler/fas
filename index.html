@@ -1,5 +1,6 @@
 <html>
   <body>
+    H
     <img id="container" height="400px" />
   
     <script>
@@ -9,7 +10,7 @@
       ];
 
         function getQueryParam(param) {
-          return URLSearchParams(window.location.search).get(param);
+          return new URLSearchParams(window.location.search).get(param);
         }
       const imageIndex = parseInt(getQueryParam("img"));
       const container = document.getElementById("container");
